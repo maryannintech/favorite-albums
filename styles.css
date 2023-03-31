@@ -12,6 +12,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
@@ -26,10 +41,18 @@ img {
     width: var(--img-size-width);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
 
 }
 
+
+/** NORMALIZE CSS*/
 
 /**
  * 1. Correct the line height in all browsers.
