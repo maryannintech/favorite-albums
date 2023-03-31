@@ -36,6 +36,10 @@ img {
     img {
         position: static;
     }
+
+    main {
+        margin-left: 70px;
+    }
 }
 
 /**
