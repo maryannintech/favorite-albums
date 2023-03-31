@@ -110,6 +110,15 @@ figcaption {
   flex-direction: row-reverse;
 }
 
+.three {
+  background-color: #838182;
+}
+
+.four {
+  background-color: #915C34;
+  flex-direction: row-reverse;
+}
+
 footer {
     display: flex;
     justify-content: center;
