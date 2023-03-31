@@ -140,6 +140,12 @@ footer {
   }
 }
 
+@media (max-width: 356px) {
+  header {
+    justify-content: space-around;
+  }
+}
+
 
 /** NORMALIZE CSS*/
 
