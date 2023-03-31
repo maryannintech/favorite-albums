@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
-    --boxshadow-color-img: 5px 5px 20px #344E41;
+    --fontsize-text: 18px;
     --img-size-width: 200px;
+    --bg-color: #DBC48E;
+    --bg-color2: #DDD4C3;
 }
 
 header {
@@ -16,6 +25,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    font-size: var(--fontsize-text);
+    background-color: var(--bg-color);
 }
 
 ul {
@@ -25,8 +36,21 @@ ul {
     list-style: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 a {
     text-decoration: none;
+    color: black;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+#about {
+  background-color: var(--bg-color2);
 }
 
 main {
@@ -37,8 +61,20 @@ main {
     text-align: center;
 }
 
-img {
+.title {
+  font-size: var(--fontsize-text);
+}
+
+img:not(.vinyl) {
     width: var(--img-size-width);
+}
+
+#about {
+  display: flex;
+}
+
+.vinyl {
+  width: 400px;
 }
 
 footer {
@@ -48,7 +84,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-
+  header {
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .vinyl {
+    width: 200px;
+  }
 }
 
 
