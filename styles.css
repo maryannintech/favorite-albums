@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-    --fontsize-text: 18px;
+    --fontsize-text: 1.125rem;
     --img-size-width: 200px;
     --bg-color: #DBC48E;
     --bg-color2: #DDD4C3;
@@ -34,6 +34,9 @@ ul {
     gap: 20px;
     text-decoration: none;
     list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
 }
 
 a:hover {
@@ -45,8 +48,14 @@ a {
     color: black;
 }
 
+li {
+  border-radius: 25px;
+  background-color: var(--bg-color2);
+  padding: 0 9px;
+}
+
 .logo {
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 #about {
@@ -64,6 +73,12 @@ main {
 img:not(.vinyl) {
     width: var(--img-size-width);
     border-radius: 20px;
+    animation: 3s slidein;
+    transition: width 2s, height 2s;
+}
+
+img:not(.vinyl):hover {
+  width: 250px;
 }
 
 #about {
@@ -75,7 +90,7 @@ img:not(.vinyl) {
 }
 
 figcaption {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .genres {
@@ -102,41 +117,48 @@ figcaption {
 }
 
 .one {
-  background-color: #36413E;
+  background-color: #b1c566;
+  background-image: url(https://i.guim.co.uk/img/media/a7006c663d1afe6521075d07c31300a34c7fe64c/0_242_5472_3283/500.jpg?quality=85&auto=format&fit=max&s=e290faafae9ff20ed80ec34fbd8ef98e);
+  background-position: 0%;
 }
 
 .two {
   background-color: #2E2E2E;
   flex-direction: row-reverse;
+  background-image: url(https://i.ytimg.com/vi/CEVXcP3VC3Y/maxresdefault.jpg);
+  background-position: 0%;
+  color: white;
 }
 
 .three {
   background-color: #838182;
+  background-image: url(https://cms.kerrang.com/images/My-Chemical-Romance-Three-Cheers-For-Sweet-Revenge-promo-2.jpg);
+  background-position: center;
 }
 
 .four {
   background-color: #915C34;
   flex-direction: row-reverse;
+  background-image: url(https://www.nme.com/wp-content/uploads/2022/08/Beyonce-in-the-22teaser-video22-for-Im-That-Girl.-Source-YouTube.jpg);
+  background-position: center;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-color2);
 }
 
 @media (max-width: 768px) {
   header {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .logo {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .vinyl {
     width: 200px;
-  }
-  .album1 {
-    justify-content: center;
   }
 }
 
