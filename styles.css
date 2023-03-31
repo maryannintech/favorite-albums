@@ -18,20 +18,21 @@ main {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 50px;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 img {
     width: var(--img-size-width);
     position: relative;
-    margin: 10px
+    margin: 8px
 }
 
-.album2 {
+.album2, .album4, .album6 {
     top: 200px;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 768px) {
     img {
         position: static;
     }
