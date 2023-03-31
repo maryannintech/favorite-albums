@@ -4,12 +4,37 @@
 
 :root {
     --boxshadow-color-img: 5px 5px 20px #344E41;
+    --img-size-width: 200px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 50px;
+}
+
+img {
+    width: var(--img-size-width);
+    position: relative;
+    margin: 10px
+}
+
+.album2 {
+    top: 200px;
+}
+
+@media (min-width: 400px) {
+    img {
+        position: static;
+    }
 }
 
 /**
