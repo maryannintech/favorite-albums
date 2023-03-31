@@ -11,36 +11,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 main {
-    position: relative;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: fit-content;
+    justify-content: center;
+    text-align: center;
 }
 
 img {
     width: var(--img-size-width);
-    position: relative;
-    margin: 8px
-}
-
-.album2, .album4, .album6 {
-    top: 200px;
 }
 
 @media (max-width: 768px) {
-    img {
-        position: static;
-    }
 
-    main {
-        margin-left: 70px;
-    }
 }
+
 
 /**
  * 1. Correct the line height in all browsers.
