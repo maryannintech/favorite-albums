@@ -61,12 +61,9 @@ main {
     text-align: center;
 }
 
-.title {
-  font-size: var(--fontsize-text);
-}
-
 img:not(.vinyl) {
     width: var(--img-size-width);
+    border-radius: 20px;
 }
 
 #about {
@@ -75,6 +72,42 @@ img:not(.vinyl) {
 
 .vinyl {
   width: 400px;
+}
+
+figcaption {
+  font-size: 12px;
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.oval {
+  border-radius: 20px;
+  background-color: var(--bg-color2);
+  padding: 0 10px;
+  color: black;
+}
+
+.album {
+  color: white;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.one {
+  background-color: #36413E;
+}
+
+.two {
+  background-color: #2E2E2E;
+  flex-direction: row-reverse;
 }
 
 footer {
@@ -92,6 +125,9 @@ footer {
   }
   .vinyl {
     width: 200px;
+  }
+  .album1 {
+    justify-content: center;
   }
 }
 
