@@ -92,6 +92,7 @@ img:not(.vinyl, .fullvinyl) {
 }
 
 img:not(.vinyl, .fullvinyl):hover {
+  cursor: pointer;
   width: 250px;
 }
 
