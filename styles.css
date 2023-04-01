@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #edede9;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -75,11 +79,16 @@ main {
     text-align: center;
 }
 
-img:not(.vinyl) {
+h1 {
+  margin: 0;
+}
+
+img:not(.vinyl, .fullvinyl) {
     width: var(--img-size-width);
     border-radius: 20px;
     animation: 3s slidein;
     transition: width 2s, height 2s;
+    box-shadow: 25px 25px 50px black;
 }
 
 img:not(.vinyl, .fullvinyl):hover {
@@ -159,6 +168,8 @@ figcaption {
   background-color: var(--bg-color2);
   border-radius: 30px;
   margin: 18px;
+  text-align: center;
+  padding: 8px 0;
 } 
 
 #playlist img {
