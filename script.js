@@ -1,3 +1,5 @@
+// will refactor this 
+
 const mitskiIMG = document.querySelector(".mitski");
 mitskiIMG.addEventListener("click", () => {
     mitskiAudio.play()

@@ -34,7 +34,7 @@ header {
 }
 
 .bxs-album {
-  color: #6b705c;
+  color: black;
 }
 
 ul {
@@ -69,6 +69,15 @@ li {
 
 #about {
   background-color: var(--bg-color2);
+  display: flex;
+  align-items: center;
+  line-height: 1.1;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#about p {
+  font-size: var(--fontsize-text);
 }
 
 main {
@@ -169,9 +178,13 @@ figcaption {
   background-color: var(--bg-color2);
   border-radius: 30px;
   margin: 18px;
-  text-align: center;
   padding: 8px 0;
+  text-align: center;
 } 
+
+h1 {
+  padding: 8px 0;
+}
 
 #playlist img {
   width: 300px;
@@ -186,8 +199,15 @@ figcaption {
 
 .play {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 0 20px;
+}
+
+.play p {
+  font-size: var(--fontsize-text);
+  line-height: 1.5;
+  text-align: center;
 }
 
 footer {
@@ -206,6 +226,10 @@ footer {
   }
   .vinyl, #playlist img {
     width: 200px;
+  }
+  #about, .play {
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 
