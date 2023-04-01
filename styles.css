@@ -95,6 +95,10 @@ img:not(.vinyl, .fullvinyl):hover {
   width: 250px;
 }
 
+audio {
+  position: static;
+}
+
 #about {
   display: flex;
   border-radius: 30px;
