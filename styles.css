@@ -231,6 +231,15 @@ footer {
     flex-wrap: wrap;
     text-align: center;
   }
+  .vinyl {
+    margin: 0 auto;
+  }
+  #about h2 {
+    margin: 0;
+  }
+  .one, .two, .three, .four {
+    padding: 18px;
+  }
 }
 
 @media (max-width: 356px) {
