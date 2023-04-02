@@ -30,7 +30,6 @@ header {
     left: 0;
     width: 100%;
     font-size: var(--fontsize-text);
-    background-color: var(--bg-color);
 }
 
 .bxs-album {
@@ -59,12 +58,12 @@ a {
 
 header li {
   border-radius: 25px;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color);
   padding: 0 9px;
 }
 
 .logo {
-  font-size: 3.125rem;
+  font-size: 4.125rem;
 }
 
 #about {
@@ -264,28 +263,38 @@ footer {
   header {
     font-size: 0.875rem;
   }
+
   .logo {
-    font-size: 2.5rem;
+    display: none;
+    padding: 0;
+    margin: 0;
   }
+
   .vinyl, #playlist img {
     width: 200px;
   }
+
   #about, .play {
     flex-wrap: wrap;
     text-align: center;
   }
+
   .vinyl, .vinyl2 {
     margin: 0 auto;
   }
+
   #about h2 {
     margin: 0;
   }
+
   .one, .two, .three, .four {
     padding: 80px 20px;
   }
+
   img:not(.vinyl, .fullvinyl) {
     width: 250px;
   }
+
   img:not(.vinyl, .fullvinyl):hover {
     width: 300px;
   }
