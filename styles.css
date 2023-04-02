@@ -260,13 +260,22 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   header {
     font-size: 0.875rem;
     margin: 10px;
   }
 
+  header ul {
+    padding: 5px;
+  }
+
+  header nav {
+    margin: 5px;
+  }
+
   .logo {
-    display: none;
+    font-size: 5.1rem;
   }
 
   .vinyl, #playlist img {
@@ -308,6 +317,16 @@ footer {
 @media (max-width: 1115px) {
   .vinyl2 {
     display: none;
+  }
+}
+
+@media (max-width: 280px) {
+  img:not(.vinyl, .fullvinyl) {
+    width: 150px;
+  }
+
+  img:not(.vinyl, .fullvinyl):hover {
+    width: 200px;
   }
 }
 
