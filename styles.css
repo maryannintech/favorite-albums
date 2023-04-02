@@ -202,6 +202,10 @@ figcaption {
   color: #eef3de;
 }
 
+.music:hover {
+  color: var(--bg-color2);
+}
+
 .tracklist {
   text-align: left;
   line-height: 2;
