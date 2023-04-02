@@ -92,7 +92,7 @@ h1 {
   margin: 0;
 }
 
-img:not(.vinyl, .fullvinyl) {
+img:not(.vinyl, .vinyl2, .fullvinyl) {
     width: var(--img-size-width);
     border-radius: 20px;
     animation: 3s slidein;
@@ -100,9 +100,13 @@ img:not(.vinyl, .fullvinyl) {
     box-shadow: 25px 25px 50px black;
 }
 
-img:not(.vinyl, .fullvinyl):hover {
+img:not(.vinyl, .vinyl2, .fullvinyl):hover {
   cursor: pointer;
   width: 350px;
+}
+
+.tracklist li {
+  font-weight: 500;
 }
 
 #about {
@@ -111,12 +115,12 @@ img:not(.vinyl, .fullvinyl):hover {
   margin: 18px;
 }
 
-.vinyl {
+.vinyl, .vinyl2 {
   width: 400px;
 }
 
 figcaption {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .genres {
@@ -145,15 +149,19 @@ figcaption {
 
 .one {
   background-color: #b1c566;
-  background-image: url(https://i.guim.co.uk/img/media/a7006c663d1afe6521075d07c31300a34c7fe64c/0_242_5472_3283/500.jpg?quality=85&auto=format&fit=max&s=e290faafae9ff20ed80ec34fbd8ef98e);
-  background-position: 0%;
+  background-image: url(https://www.themarysue.com/wp-content/uploads/2022/11/Mitski-Puberty-2.jpeg?fit=2000%2C1333);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .two {
   background-color: #2E2E2E;
   flex-direction: row-reverse;
   background-image: url(https://i.ytimg.com/vi/CEVXcP3VC3Y/maxresdefault.jpg);
-  background-position: 0%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -161,6 +169,8 @@ figcaption {
   background-color: #838182;
   background-image: url(https://cms.kerrang.com/images/My-Chemical-Romance-Three-Cheers-For-Sweet-Revenge-promo-2.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .four {
@@ -168,6 +178,8 @@ figcaption {
   flex-direction: row-reverse;
   background-image: url(https://www.nme.com/wp-content/uploads/2022/08/Beyonce-in-the-22teaser-video22-for-Im-That-Girl.-Source-YouTube.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .one, .two, .three, .four {
@@ -245,20 +257,32 @@ footer {
     flex-wrap: wrap;
     text-align: center;
   }
-  .vinyl {
+  .vinyl, .vinyl2 {
     margin: 0 auto;
   }
   #about h2 {
     margin: 0;
   }
   .one, .two, .three, .four {
-    padding: 18px;
+    padding: 80px 20px;
+  }
+  img:not(.vinyl, .fullvinyl) {
+    width: 250px;
+  }
+  img:not(.vinyl, .fullvinyl):hover {
+    width: 300px;
   }
 }
 
 @media (max-width: 356px) {
   header {
     justify-content: space-around;
+  }
+}
+
+@media (max-width: 1115px) {
+  .vinyl2 {
+    display: none;
   }
 }
 
