@@ -59,7 +59,7 @@ a {
 header li {
   border-radius: 25px;
   background-color: var(--bg-color);
-  padding: 0 9px;
+  padding: 3px 9px;
 }
 
 .logo {
@@ -262,12 +262,11 @@ footer {
 @media (max-width: 768px) {
   header {
     font-size: 0.875rem;
+    margin: 10px;
   }
 
   .logo {
     display: none;
-    padding: 0;
-    margin: 0;
   }
 
   .vinyl, #playlist img {
