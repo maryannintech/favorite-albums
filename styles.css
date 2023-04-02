@@ -71,7 +71,7 @@ header li {
   background-color: var(--bg-color2);
   display: flex;
   align-items: center;
-  line-height: 1.1;
+  line-height: 1.4;
   padding: 0 20px;
   text-align: center;
 }
@@ -185,6 +185,23 @@ figcaption {
 .one, .two, .three, .four {
   border-radius: 30px;
   margin: 18px;
+}
+
+.listen {
+  text-align: center;
+  font-size: var(--fontsize-text);
+  margin: 0 auto;
+}
+
+.listen ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.music {
+  font-size: 2rem;
+  color: #eef3de;
 }
 
 .tracklist {
